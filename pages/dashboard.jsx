@@ -1,6 +1,11 @@
 import { Fragment, useState } from "react";
 import { Button, AppBar, Toolbar, LinearProgress, Tooltip, Box, MenuItem, Typography, IconButton, Menu  } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
+import pepe from '../imgs/pepe.png'
+import fulano from '../imgs/fulano.png'
+import gerardo from '../imgs/gerardo.png'
+import uriel from '../imgs/uriel.png'
+import anacleto from '../imgs/anacleto.png'
 
 export function Dashboard() {
     const [anchorElUser, setAnchorElUser] = useState(null);
@@ -28,7 +33,7 @@ export function Dashboard() {
                     <Box sx={{ position:"fixed", right:"4em"}}>
                         <Tooltip title="Menu">
                             <IconButton onClick={handleOpenUserMenu}>
-                                <img alt="pepe tapia" src="../imgs/pepe.png" style={{height:"50px", width:"50px", objectFit:"contain", backgroundColor:"#205723", borderRadius:"50%"}}/>
+                                <img alt="pepe tapia" src={pepe} style={{height:"50px", width:"50px", objectFit:"contain", backgroundColor:"#205723", borderRadius:"50%"}}/>
                             </IconButton>
                         </Tooltip>
                         <Menu
@@ -102,10 +107,10 @@ export function Dashboard() {
                             margin:"0em 1em 1em 1em",
                             justifyItems:"center"
                         }}>
-                            <img src="../imgs/fulano.png" style={{gridColumn:1, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/gerardo.png" style={{gridColumn:2, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/uriel.png" style={{gridColumn:3, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/anacleto.png" style={{gridColumn:4, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={fulano} style={{gridColumn:1, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={gerardo} style={{gridColumn:2, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={uriel} style={{gridColumn:3, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={anacleto} style={{gridColumn:4, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
                             <p style={{gridColumn:1, gridRow:2}}>Fulano Suazo</p>
                             <p style={{gridColumn:2, gridRow:2}}>Gerardo Perez</p>
                             <p style={{gridColumn:3, gridRow:2}}>Uriel Lopez</p>

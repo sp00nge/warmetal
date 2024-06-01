@@ -1,7 +1,13 @@
 import { Fragment, useState } from "react";
 import { Toolbar, AppBar, Box, Menu, MenuItem, Typography, Tooltip, IconButton, LinearProgress } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
-
+import personaje from '../imgs/personaje.png'
+import pepe from '../imgs/pepe.png'
+import uriel from '../imgs/uriel.png'
+import anacleto from '../imgs/anacleto.png'
+import gerardo from '../imgs/gerardo.png'
+import fulano from '../imgs/fulano.png'
+import chart from '../imgs/chart.png'
 
 export function Perfil() {
 
@@ -30,7 +36,7 @@ export function Perfil() {
                     <Box sx={{ position:"fixed", right:"4em"}}>
                         <Tooltip title="Menu">
                             <IconButton onClick={handleOpenUserMenu}>
-                                <img alt="pepe tapia" src="../imgs/pepe.png" style={{height:"50px", width:"50px", objectFit:"contain", backgroundColor:"#205723", borderRadius:"50%"}}/>
+                                <img alt="pepe tapia" src={pepe} style={{height:"50px", width:"50px", objectFit:"contain", backgroundColor:"#205723", borderRadius:"50%"}}/>
                             </IconButton>
                         </Tooltip>
                         <Menu
@@ -61,8 +67,8 @@ export function Perfil() {
             </AppBar>
 
             <div style={{backgroundColor:"#2c2c2c", borderRadius:"10px", margin:"4em", display:"grid", gridTemplateColumns:"12em 24em 35em"}}>
-                <img src="../imgs/personaje.png" alt="avatar" style={{gridRow:1, gridColumn:1, margin:"1em", backgroundColor:"#3d3d3d", borderRadius:"10px", height:"auto", width:"12em"}} />
-                <img src="../imgs/chart.png" alt="grafico" style={{gridRow:2, gridColumn:1, margin:"1em", backgroundColor:"#3d3d3d", borderRadius:"10px", width:"12em"}} />
+                <img src={personaje} alt="avatar" style={{gridRow:1, gridColumn:1, margin:"1em", backgroundColor:"#3d3d3d", borderRadius:"10px", height:"auto", width:"12em"}} />
+                <img src={chart} alt="grafico" style={{gridRow:2, gridColumn:1, margin:"1em", backgroundColor:"#3d3d3d", borderRadius:"10px", width:"12em"}} />
                 <div style={{gridColumn:2, gridRow:1, backgroundColor:"#3d3d3d", margin:"1em 2em", borderRadius:"10px"}}>
                     <h2 style={{textAlign:"left", marginLeft:"1em"}}>Pepe Tapia Nvl. 21</h2>
                     <hr style={{border:"1px solid #2c2c2c"}}/>
@@ -112,10 +118,10 @@ export function Perfil() {
                             margin:"1em 0em 1em 0em ",
                             justifyItems:"center"
                         }}>
-                            <img src="../imgs/fulano.png" style={{gridColumn:1, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/gerardo.png" style={{gridColumn:2, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/uriel.png" style={{gridColumn:3, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
-                            <img src="../imgs/anacleto.png" style={{gridColumn:4, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={fulano} style={{gridColumn:1, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={gerardo} style={{gridColumn:2, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={uriel} style={{gridColumn:3, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
+                            <img src={anacleto} style={{gridColumn:4, gridRow:1, width:"100px", height:"100px", borderRadius:"50%", backgroundColor:"#2c2c2c", marginTop:"1em"}}/>
                             <p style={{gridColumn:1, gridRow:2, margin:"-2em"}}>Fulano Suazo</p>
                             <p style={{gridColumn:2, gridRow:2, margin:"-2em"}}>Gerardo Perez</p>
                             <p style={{gridColumn:3, gridRow:2, margin:"-2em"}}>Uriel Lopez</p>

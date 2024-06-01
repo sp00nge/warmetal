@@ -4,6 +4,9 @@ import { AppBar, Backdrop, Box, Button, Container, Fade, Modal, Paper, Toolbar  
 import Carousel from 'react-material-ui-carousel'
 import slider from "../helper/slider.json"
 import { Item } from "../components/Item";
+import apoderado from "../imgs/apoderado.png"
+import estudiante from "../imgs/estudiante.png"
+import profesor from "../imgs/profesor.png"
 
 const styleModal = {
     position: 'absolute',
@@ -40,15 +43,15 @@ export function Home() {
 
                                 <Link to="./login" style={{textDecoration: "none", color:"white", display:"flex", justifyContent: "center"}}>
                                 <Paper sx={{width:"33%", height:"24vh", margin: 4, marginTop:16}}>
-                                    <img src="../imgs/estudiante.png" alt="" style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
+                                    <img src={estudiante} alt="" style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
                                     <h2 style={{textAlign: "center"}}>Estudiante</h2>
                                 </Paper>
                                 <Paper sx={{width:"33%", height:"24vh", margin: 4, marginTop:16}}>
-                                    <img src="../imgs/apoderado.png" alt=""style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
+                                    <img src={apoderado} alt=""style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
                                     <h2 style={{textAlign: "center"}}>Apoderado</h2>
                                 </Paper>
                                 <Paper sx={{width:"33%", height:"24vh", margin:4, marginTop:16}}>
-                                    <img src="../imgs/profesor.png" alt=""style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
+                                    <img src={profesor} alt=""style={{display: "block", marginLeft:"auto", marginRight: "auto", marginTop:32}} draggable="false" />
                                     <h2 style={{textAlign: "center"}}>Profesor</h2>
                                 </Paper>
                                 </Link>
