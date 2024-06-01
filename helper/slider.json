@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "image":"../imgs/libertadores.jpg",
+        "title":"la bendita copa libertadores"
+    },
+    {
+        "id":2,
+        "image":"../imgs/pato.jpg",
+        "title":"chato papito"
+    }
+]
