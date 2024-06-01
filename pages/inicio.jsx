@@ -7,6 +7,8 @@ import { Item } from "../components/Item";
 import apoderado from "../imgs/apoderado.png"
 import estudiante from "../imgs/estudiante.png"
 import profesor from "../imgs/profesor.png"
+import pato from "../imgs/pato.jpg"
+import libertadores from "../imgs/libertadores.jpg"
 
 const styleModal = {
     position: 'absolute',
