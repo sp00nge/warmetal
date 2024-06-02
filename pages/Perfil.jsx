@@ -1,13 +1,13 @@
 import { Fragment, useState } from "react";
 import { Toolbar, AppBar, Box, Menu, MenuItem, Typography, Tooltip, IconButton, LinearProgress } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
-import personaje from '../imgs/personaje.png'
-import pepe from '../imgs/pepe.png'
-import uriel from '../imgs/uriel.png'
-import anacleto from '../imgs/anacleto.png'
-import gerardo from '../imgs/gerardo.png'
-import fulano from '../imgs/fulano.png'
-import chart from '../imgs/chart.png'
+import personaje from '/imgs/personaje.png'
+import pepe from '/imgs/pepe.png'
+import uriel from '/imgs/uriel.png'
+import anacleto from '/imgs/anacleto.png'
+import gerardo from '/imgs/gerardo.png'
+import fulano from '/imgs/fulano.png'
+import chart from '/imgs/chart.png'
 
 export function Perfil() {
 

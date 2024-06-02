@@ -1,11 +1,11 @@
 import { Fragment, useState } from "react";
 import { Button, AppBar, Toolbar, LinearProgress, Tooltip, Box, MenuItem, Typography, IconButton, Menu  } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-import pepe from '../imgs/pepe.png'
-import fulano from '../imgs/fulano.png'
-import gerardo from '../imgs/gerardo.png'
-import uriel from '../imgs/uriel.png'
-import anacleto from '../imgs/anacleto.png'
+import pepe from '/imgs/pepe.png'
+import fulano from '/imgs/fulano.png'
+import gerardo from '/imgs/gerardo.png'
+import uriel from '/imgs/uriel.png'
+import anacleto from '/imgs/anacleto.png'
 
 export function Dashboard() {
     const [anchorElUser, setAnchorElUser] = useState(null);

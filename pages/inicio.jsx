@@ -3,12 +3,12 @@ import { Link } from "react-router-dom"
 import { AppBar, Backdrop, Box, Button, Container, Fade, Modal, Paper, Toolbar  } from "@mui/material";
 import Carousel from 'react-material-ui-carousel'
 import slider from "../helper/slider.json"
-import { Item } from "../components/Item";
-import apoderado from "../imgs/apoderado.png"
-import estudiante from "../imgs/estudiante.png"
-import profesor from "../imgs/profesor.png"
-import pato from "../imgs/pato.jpg"
-import libertadores from "../imgs/libertadores.jpg"
+import { Item } from "/components/Item";
+import apoderado from "/imgs/apoderado.png"
+import estudiante from "/imgs/estudiante.png"
+import profesor from "/imgs/profesor.png"
+import pato from "/imgs/pato.jpg"
+import libertadores from "/imgs/libertadores.jpg"
 
 const styleModal = {
     position: 'absolute',
